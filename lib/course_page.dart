@@ -216,7 +216,7 @@ class CourseScreen extends StatelessWidget {
                        ),
                        child: const Center(
                          child: Text(
-                           'Start',
+                           'Finish',
                            style: TextStyle(
                              color: Colors.white,
                            ),
