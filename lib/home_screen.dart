@@ -270,7 +270,7 @@ class HomeScreen extends StatelessWidget {
                                     Text(
                                       courseTitle[i],
                                       style: const TextStyle(
-                                        color: Colors.black54,
+                                        color: Colors.white,
                                       ),
                                     ),
                                     const SizedBox(
