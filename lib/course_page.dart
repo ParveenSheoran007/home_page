@@ -73,14 +73,13 @@ class CourseScreen extends StatelessWidget {
               children: [
                 Container(
               padding: const EdgeInsets.all(20),
-                height: 150,
-                  width: 120,
+                height: 170,
+                  width: 140,
                   decoration: BoxDecoration(
                     color: const Color(0xFF5AD995),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
@@ -90,32 +89,35 @@ class CourseScreen extends StatelessWidget {
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(20),
                         ),
-                        child: const Center(
-                          child: Icon(
-                            Icons.bookmark,
-                            color: Color(0xFF5AD995),
-                          ),
+                        child: const Icon(
+                          Icons.bookmark,
+                          color: Color(0xFF5AD995),
                         ),
                       ),
                       const Text('Test',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                      ),
-                      ),
-                      const Text('Chapter Knowledge',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 13,
+                          fontSize: 16,
                         ),
                       ),
-                    ],
+                        const Row(
+                          children: [
+                            Text('Chapter Knowledge',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 13,
+                              ),
+                            ),
+                          ],
+                        ),
+
+                   ],
                   ),
                 ),
                 Container(
                   padding: const EdgeInsets.all(20),
-                    height: 150,
-                    width: 120,
+                    height: 170,
+                    width: 140,
                   decoration: BoxDecoration(
                     color: const Color(0xFF5EBBFD),
                     borderRadius: BorderRadius.circular(10),
@@ -131,11 +133,9 @@ class CourseScreen extends StatelessWidget {
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(20),
                         ),
-                        child: const Center(
-                          child: Icon(
-                            Icons.font_download_off_outlined,
-                            color: Color(0xFF5EBBFD),
-                          ),
+                        child: const Icon(
+                          Icons.font_download_off_outlined,
+                          color: Color(0xFF5EBBFD),
                         ),
                       ),
                       const Text('Summarize',
@@ -180,15 +180,18 @@ class CourseScreen extends StatelessWidget {
                  child:Row(
                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                    children: [
-                     Container(
-                       height: 40,
-                       width: 40,
-                       decoration: BoxDecoration(
-                         color: bgColors[i],
-                         borderRadius: BorderRadius.circular(20),
-                       ),
-                       child: Center(
-                         child: courseIconsData[i],
+                     Padding(
+                       padding: const EdgeInsets.all(8),
+                       child: Container(
+                         height: 40,
+                         width: 40,
+                         decoration: BoxDecoration(
+                           color: bgColors[i],
+                           borderRadius: BorderRadius.circular(20),
+                         ),
+                         child: Center(
+                           child: courseIconsData[i],
+                         ),
                        ),
                      ),
                      Column(
@@ -207,18 +210,21 @@ class CourseScreen extends StatelessWidget {
 
                      ),
                      const SizedBox(width: 20,),
-                     Container(
-                       height: 30,
-                       width: 100,
-                       decoration: BoxDecoration(
-                         color: const Color(0xFF178366),
-                         borderRadius: BorderRadius.circular(15),
-                       ),
-                       child: const Center(
-                         child: Text(
-                           'Finish',
-                           style: TextStyle(
-                             color: Colors.white,
+                     Padding(
+                       padding: const EdgeInsets.all(8),
+                       child: Container(
+                         height: 30,
+                         width: 100,
+                         decoration: BoxDecoration(
+                           color: const Color(0xFF178366),
+                           borderRadius: BorderRadius.circular(15),
+                         ),
+                         child: const Center(
+                           child: Text(
+                             'Start',
+                             style: TextStyle(
+                               color: Colors.white,
+                             ),
                            ),
                          ),
                        ),
