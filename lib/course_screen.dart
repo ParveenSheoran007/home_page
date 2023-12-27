@@ -36,11 +36,7 @@ class CourseBar extends StatelessWidget {
         ),
           label: 'My',
         ),
-        BottomNavigationBarItem(icon: Icon(
-          Icons.music_note,
-        ),
-          label: 'Music',
-        ),
+
       ],
     );
   }
